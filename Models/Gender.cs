@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-
 namespace Pokedex.Models
 {
     [Table("Gender")]
@@ -14,7 +13,9 @@ namespace Pokedex.Models
 
         [Display(Name = "Nome")]
         [Required(ErrorMessage = "Por favor, informe o Nome")]
-        [StringLength(15, ErrorMessage = "O Nome deve possuir no máximo 15 caracteres")]
+        [StringLength(30, ErrorMessage = "O Nome deve possuir no máximo 30 caracteres")]
         public string Name { get; set; } = string.Empty;
+
     }
 }
+

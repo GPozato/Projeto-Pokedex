@@ -8,12 +8,12 @@ namespace Pokedex.Models
     public class PokemonTypes
     {
         [Key, Column(Order = 1)]
-        public uint ProkemonNumber { get; set; }
+        public uint PokemonNumber { get; set; }
+        [ForeignKey("PokemonNumber")]
         public Pokemons Pokemon { get; set; } = new();
 
         [Key, Column(Order = 2)]
         public uint TypeId { get; set; }
-
         [ForeignKey("TypeId")]
         public Types Type { get; set; } = new();
     }

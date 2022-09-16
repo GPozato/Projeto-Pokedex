@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\etec\\Desktop\\Pokedex\\Pokedex.csproj": {}
+    "C:\\Users\\etec\\Desktop\\pokedex\\Pokedex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\etec\\Desktop\\Pokedex\\Pokedex.csproj": {
+    "C:\\Users\\etec\\Desktop\\pokedex\\Pokedex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\etec\\Desktop\\Pokedex\\Pokedex.csproj",
+        "projectUniqueName": "C:\\Users\\etec\\Desktop\\pokedex\\Pokedex.csproj",
         "projectName": "Pokedex",
-        "projectPath": "C:\\Users\\etec\\Desktop\\Pokedex\\Pokedex.csproj",
+        "projectPath": "C:\\Users\\etec\\Desktop\\pokedex\\Pokedex.csproj",
         "packagesPath": "C:\\Users\\etec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\etec\\Desktop\\Pokedex\\obj\\",
+        "outputPath": "C:\\Users\\etec\\Desktop\\pokedex\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\etec\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

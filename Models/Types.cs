@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-
 namespace Pokedex.Models
 {
     [Table("Types")]
@@ -21,5 +20,9 @@ namespace Pokedex.Models
         [Required(ErrorMessage = "Por favor, informe a Cor")]
         [StringLength(7, ErrorMessage = "A Cor deve possuir no máximo 7 caracteres")]
         public string Color { get; set; } = string.Empty;
+    
+        public ICollection<PokemonTypes> PokemonsOfThisType { get; set; } = new List<PokemonTypes>();
+        public ICollection<Weaknesses> PokemonsWithThisWeakness { get; set; } = new List<Weaknesses>();
     }
 }
+
